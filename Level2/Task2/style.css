@@ -1,0 +1,191 @@
+body{
+    margin:0;
+    padding: 0;
+}
+#home{
+    background-image: url(https://wallpaperaccess.com/full/5735348.jpg);
+    background-size: cover;
+    min-height: 100vh;
+    max-height: fit-content;
+    border-bottom: 2px double grey;
+}
+.navbar .navbar-brand{
+    font-size: 2rem;
+}
+.navbar .navbar-nav .nav-link{
+    color: whitesmoke;
+    text-decoration: none;
+    border: 1px solid transparent;
+    background: transparent;
+    border-radius: 25px;
+    padding:10px;
+}
+.navbar .navbar-nav .nav-link:hover{
+    color: rgb(0, 0, 0);
+    background: whitesmoke;
+} 
+@media screen and (max-width: 1000px) {
+    ul.navbar-nav {
+      display: none;
+    }
+  }
+.home .offcanvas{
+    background-color: rgb(46, 45, 45);
+}
+.home .offcanvas .btn-close{
+    padding:20px;
+}
+.home .offcanvas-body .items{
+    display: grid;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-size: 4vw;
+    padding-top: 40px;
+    opacity: 0.5;
+    
+}
+.home .offcanvas-body .items:hover{
+    opacity: 1;
+}
+.mid{
+    position: fixed;
+    width: 100%;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 10vw;
+    margin-top: 25vh;
+    transition: 0.3s;
+}
+
+#about{
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    padding-bottom: 30px;
+}
+.about1{
+    margin: 0;
+    border-bottom: 2px double grey;
+}
+.galaxy video{
+    width: 100%;
+}
+.about .text{
+    padding: 50px;
+    font-weight: bold;
+    color:transparent;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRg1p47PWBzasz4u0KnNEIY7k2fBnccAwnw4Q&usqp=CAU);
+    animation: bg-animation 30s cubic-bezier(0.3,0,0.7,1) infinite; 
+ }
+ .about .img-fluid{
+    height: 400px;
+    width: 550px;
+    padding: 55px;
+ }
+ @keyframes bg-animation {
+    0% {background-position: 0% 0%;}
+    50% {background-position: 100% 100%;}
+    100% {background-position: 0% 0%;}
+ }
+ .footer{
+    position: relative;
+    background-color: rgba(227, 227, 227, 0.849);
+    width: 100%;
+    min-height: 100px;
+    padding-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+.footer .icons,
+.footer .menu{
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    align-items: center;
+}
+.footer .icons li,
+.footer .menu li{
+    list-style: none;
+}
+.footer .icons li a{
+    padding-top: 20px;
+    color: black;
+    font-size: 2.5vw;
+    display: inline-block;
+    margin: 0 10px;
+    transition:0.5s;
+}
+.footer .icons li a:hover{
+    transform: translateY(-20px);
+}
+.footer .menu li a{
+    text-decoration: none;
+    color: black;
+    font-size: 2vw;
+    display: inline-block;
+    margin: 0 10px;
+    opacity:0.5;
+}
+.footer .menu li a:hover{
+    opacity: 1;
+}
+.footer .wave{
+    position: absolute;
+    width: 100%;
+    top:-100px;
+    left:0;
+    height:100px;
+    background: url(./wave.png);
+    background-size: 1000px 100px;
+}
+.footer .wave#wave1{
+    z-index:1000;
+    opacity:1;
+    bottom:0;
+    animation: animateWave 4s linear infinite;
+}
+
+.footer .wave#wave2{
+    z-index:999;
+    opacity:0.5;
+    bottom:10px;
+    animation: animateWave1 4s linear infinite;
+}
+.footer .wave#wave3{
+    z-index:1000;
+    opacity:0.2;
+    bottom:15px;
+    animation: animateWave 3s linear infinite;
+}
+.footer .wave#wave4{
+    z-index:999;
+    opacity:0.7;
+    bottom:20px;
+    animation: animateWave1 3s linear infinite;
+}
+@keyframes animateWave{
+    0%{
+        background-position-x:1000px ;
+    }
+    100%{
+        background-position-x:0px ;
+    }
+}
+@keyframes animateWave1{
+    0%{
+        background-position-x:0px ;
+    }
+    100%{
+        background-position-x:1000px ;
+    }
+}
