@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=2.0">
+    <title>Calculator</title>
+    <link rel="icon" href="https://cdn.jim-nielsen.com/ios/512/calculator-2020-02-06.png">
+    <link rel="stylesheet" href="./style.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100" rel="stylesheet">
+    <script src= 
+"https://cdnjs.cloudflare.com/ajax/libs/mathjs/10.6.4/math.js"
+        integrity= 
+"sha512-BbVEDjbqdN3Eow8+empLMrJlxXRj5nEitiCAK5A1pUr66+jLVejo3PmjIaucRnjlB0P9R3rBUs3g5jXc8ti+fQ=="
+        crossorigin="anonymous"
+        referrerpolicy="no-referrer"></script> 
+    <script src= 
+"https://cdnjs.cloudflare.com/ajax/libs/mathjs/10.6.4/math.min.js"
+        integrity= 
+"sha512-iphNRh6dPbeuPGIrQbCdbBF/qcqadKWLa35YPVfMZMHBSI6PLJh1om2xCTWhpVpmUyb4IvVS9iYnnYMkleVXLA=="
+        crossorigin="anonymous"
+        referrerpolicy="no-referrer"></script> 
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+</head>
+<body>
+      <div id="cal">
+        <table id="calci">
+          <tr id="r1">
+            <td><input type="text" id="result"></td>
+            
+          </tr>
+          <tr id="r2">
+            <td><input style="font-size: 20px;" class="bt" type="button" value="AC" onclick="clr()"/></td>
+            <td><input style="font-size: 20px;" class="bt" type="button" value="DEL" onclick="del()"/></td>
+            <td><input class="bt" type="button" value="√"  onclick="sqr()"> </td>
+            <td><input class="bt" id="o1" type="button" value="÷" onclick="dis('/')"
+                 onkeydown="myFunction(event)"> </td>
+          </tr>
+          <tr id="r3">
+            <td><input class="bt" type="button" value="1" onclick="dis('1')"
+                  onkeydown="myFunction(event)"> </td>
+            <td><input class="bt"  type="button" value="2" onclick="dis('2')"
+                  onkeydown="myFunction(event)"> </td>
+            <td><input class="bt" type="button" value="3" onclick="dis('3')"
+                  onkeydown="myFunction(event)"> </td>
+            
+            <td><input class="bt" id="o2" type="button" value="×" onclick="dis('*')"
+                  onkeydown="myFunction(event)"> </td>
+          </tr>
+          <tr id="r4">
+            <td><input class="bt"  type="button" value="4" onclick="dis('4')"
+                  onkeydown="myFunction(event)"> </td>
+            <td><input class="bt"  type="button" value="5" onclick="dis('5')"
+                  onkeydown="myFunction(event)"> </td>
+            <td><input class="bt"  type="button" value="6" onclick="dis('6')"
+                  onkeydown="myFunction(event)"> </td>
+            
+            <td><input class="bt" id="o3" type="button" value="-" onclick="dis('-')"
+                  onkeydown="myFunction(event)"> </td>
+          </tr>
+          <tr id="r5">
+            <td><input class="bt"  type="button" value="7" onclick="dis('7')"
+                  onkeydown="myFunction(event)"> </td>
+            <td><input class="bt"  type="button" value="8" onclick="dis('8')"
+                  onkeydown="myFunction(event)"> </td>
+            <td><input class="bt"  type="button" value="9" onclick="dis('9')"
+                  onkeydown="myFunction(event)"> </td>
+            
+            <td><input class="bt" id="o4" type="button" value="+" onclick="dis('+')"
+                  onkeydown="myFunction(event)"> </td>
+          </tr>
+          <tr>
+            <td><input class="btt"  type="button" value="0" onclick="dis('0')"
+                  onkeydown="myFunction(event)"> </td>
+            <td><input class="bt"  type="button" value="." onclick="dis('.')"
+                  onkeydown="myFunction(event)"> </td>
+            <td><input class="bt" id="o5" type="button" value="=" onclick="solve()"> </td>     
+          </tr>
+        </table>
+      
+        <script src="./design.js"></script>
+       
+      </div>
+</body>
+</html>

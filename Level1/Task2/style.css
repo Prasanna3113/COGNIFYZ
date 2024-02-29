@@ -1,0 +1,58 @@
+body{
+    background-color: black;
+}
+ #calci{
+     border:2px solid black;
+     top: 50px;
+     margin: auto;
+     height: 480px;
+     width: 100px;
+     border-radius: 20px;
+     background-color: rgb(200, 196, 196);
+     position:relative;
+     border: 1px solid whitesmoke;
+     box-shadow: 5px 10px 18px  whitesmoke;
+ }
+ #r1 #result{
+     height: 100px;
+     width:250px;
+     background-color: rgb(225, 222, 222);
+     color: rgb(0, 0, 0);
+     font-size: 40px;
+ }
+ .bt{
+     height:60px;
+     width: 60px;
+     border-radius: 30px;
+     font-size: 30px;
+     background-color: black;
+     color: aliceblue;
+ }
+ .btt{
+     height:60px;
+     width:124px;
+     border-radius: 30px;
+     font-size: 30px;
+     background-color: black;
+     color: aliceblue;
+ }
+ tr{
+     display:inline-block;
+ }
+ 
+ #r2 .bt{
+     background-color: rgb(147, 147, 147);
+     color: rgb(0, 0, 0);
+     
+ }
+ #o1,#o2,#o3,#o4,#o5{
+     background-color: rgb(221, 145, 24);
+     color: black;
+ }
+ .bt:hover{
+     opacity: 0.5;
+ } 
+ .btt:hover{
+     opacity: 0.5;
+ }
+ 
