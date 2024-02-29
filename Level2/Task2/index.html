@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <section class="home" id="home">
+        <nav class="navbar bg-transparent navbar-expand-lg navbar-dark">
+            <div class="container-fluid">
+              <h1 class="navbar-brand text-white">Logo</h1>
+              <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#demo">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+                <ul class="navbar-nav">
+                    <li class="nav-item active">
+                        <a class="nav-link " href="#home">Home </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " href="#galaxy">Galaxies</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <div class="offcanvas offcanvas-start" id="demo">
+            <button type="button" class="btn-close btn-close-white shadow-none border-0" data-bs-dismiss="offcanvas"></button>
+            <div class="offcanvas-body ">
+                <a href="#home" class="items">Home</a>
+                <a href="#galaxy" class="items">Galaxies</a>
+                <a href="#about" class="items">About</a>
+                <a href="#contact" class="items">Contact</a>
+            </div>
+      </div>
+        <div class="mid text-white ms-auto" id="mid">
+            <p>GALAXY</p>
+        </div>
+    </section>
+
+    <section class="galaxy bg-dark" id="galaxy">
+        <div class="embed-responsive p-4">
+            <video src="./video.mp4" autoplay muted loop></video>
+        </div>
+    </section>
+
+    <section class="about " id="about">
+        <div class="row about1">
+            <div class=" col-lg-6">
+                <h1 class="text" style="font-size:7vw;">Galaxies are vast Cosmic Islands</h1>
+            </div>  
+            <div class=" col-lg-6">
+                <img class="img-fluid rounded-circle" src="https://64.media.tumblr.com/24b3b00304ccd6032d9cb51141ef627a/tumblr_ppgzk44y331udh5n8o1_r1_500.gifv">
+            </div>
+        </div>
+        <div class="row about2 mb-5">
+            <div class="col-lg-6">
+                <img class="img-fluid" src="https://i.pinimg.com/originals/a9/ca/2f/a9ca2f2a2f8f65e78766dc1b2e01e044.gif">
+            </div>
+            <div class="col-lg-6">
+                <h1 class="text" style="font-size:4vw;">system of stars, stellar remnants, interstellar gas, dust, and dark matter bound together by gravity</h1>
+            </div>  
+        </div>
+    </section>
+
+    <section class="footer" id="contact">
+        <div class="waves">
+            <div class="wave" id="wave1"></div>
+            <div class="wave" id="wave2"></div>
+            <div class="wave" id="wave3"></div>
+            <div class="wave" id="wave4"></div>
+            <div class="wave" id="wave5"></div>
+        </div>
+        <div class="row">
+            <div class="col-sm-12">
+                <ul class="icons ">
+                    <li><a href=""><ion-icon name="logo-instagram"></ion-icon></a></li>
+                    <li><a href=""><ion-icon name="logo-twitter"></ion-icon></a></li>
+                    <li><a href=""><ion-icon name="logo-facebook"></ion-icon></a></li>
+                    <li><a href=""><ion-icon name="logo-linkedin"></ion-icon></a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-12">
+                <ul class="menu">
+                    <li><a href="">Home</a></li>
+                    <li><a href="">About</a></li>
+                    <li><a href="">Galaxies</a></li>
+                    <li><a href="">Services</a></li>
+                    <li><a href="">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+</body>
+<script src="./design.js"></script>
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</html>
