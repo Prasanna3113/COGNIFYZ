@@ -1,0 +1,152 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <title>Document</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Caramel&display=swap');
+        body{
+            margin: 0%;
+            padding: 0%;
+        }
+        .nav{
+            padding: 20px;
+            justify-content: center;
+        }
+        .container{
+            align-items: center;
+            justify-content: center;
+        }
+        .row{
+            padding: 20px;
+            justify-content: center;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            grid-gap: 40px;
+        }
+        
+        .card{
+            height: 400px;
+            width: 320px;
+            
+            overflow: hidden;
+            box-shadow: 5px 5px 15px rgba(0,0,0,0.9);
+            transition: transform 0.5s;
+        }
+        
+        .card-image,img{
+            height: 100%;
+            width: 100%;
+            background-position: center;
+            background-size: cover;
+        }
+        .card-body{
+            color: aliceblue;
+            background: linear-gradient(transparent,#1c1c1c 38%);
+            position: absolute;
+            overflow: hidden;
+            text-align: center;
+            transition: height 0.5s;
+            height: 0;
+            width: 100%;
+            bottom: -10%;
+            
+        }
+        .card:hover .card-body{
+            height: 70%;
+        }
+        
+    </style>
+</head>
+<body>
+    <nav class="nav">
+        <h1 class="title is-1">
+            FASHION TIME
+        </h1>
+    </nav>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="card ">
+                        <div class="card-image">
+                            <img src="https://pbs.twimg.com/media/EdNqpxFU8AElVpg.jpg" >
+                        </div>
+                        <div class="card-body">
+                            <h4>Graff Diamond's Hallucination</h4>
+                            <p>The Hallucination remains in the possession of Laurence Graff, with the rare diamonds and stones arranged in a captivating rainbow-style design</p>
+                            <p>$55 Million</p>
+                        </div>    
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="https://i.pinimg.com/564x/f8/74/99/f8749965fe9fbc9e7bf63540febdefc1.jpg" alt="">
+                        </div>
+                        <div class="card-body">
+                            <h4>Graff Diamond's Fascination</h4>
+                            <p>This watch by Graff Diamonds has 114 carats of colorless diamonds.The diamond dial is shaped like a drop and can be used as a ring</p>
+                            <p>$40 Million</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="https://i.pinimg.com/564x/56/8d/60/568d60998e717b310f37ad93d797ee4d.jpg" alt="">
+                        </div>
+                        <div class="card-body">
+                            <h4>Audemars Piguet SAPPHIRE Orbe</h4>
+                            <p>This is one of the high-jewelry watch collections by Audemars Piguet, featuring Diamond Punk, which has a river of priceless gems in white, orange, and blue</p>
+                            <p>$904,000</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-12 col-sm-6 col-md-3">
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcTKLYBRfcOrtWEmYG2jEeswrOwoGAuEV8GV2OBs9dpUX6aH267diCNhPyRxVUdFnVcfLGELSi2rfnWH8VfzPaWMUFP6EQxh97Kp5MHu7Uo&usqp=CAE" alt="">
+                        </div>
+                        <div class="card-body">
+                            <h4>Rolex Lady Datejust</h4>
+                            <p>This Oyster Perpetual Lady-Datejust in 18 ct Everose gold features a chocolate, diamond-set dial and a President bracelet.The sunray finish creates delicate light reflections on many dials in the Oyster Perpetual collection.</p>
+                            <p>$43,528</p>
+                        </div>    
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-3">
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="https://i.pinimg.com/564x/1c/a8/4b/1ca84b5b91557bf072385d488f2cf1fa.jpg" alt="">
+                        </div>
+                        <div class="card-body">
+                            <h4>Hublot’s Big Bang</h4>
+                            <p>Hublot was crafted over 14 months by 12 master cutters and five stone cutters.The 1,282 diamonds were carefully chosen to match the concept and design of the Big Bang.</p>
+                            <p>$5 Million</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-3">
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="https://staticg.sportskeeda.com/editor/2023/12/18bd6-17024991463031-1920.jpg?w=1460" alt="">
+                        </div>
+                        <div class="card-body">
+                            <h4>Jaeger-LeCoultre Joaillerie</h4>
+                            <p> this one is shaped like a cuff and has five square links. These links have 576 diamonds or are composed of polished, precious metal.</p>
+                            <p>$26 Million</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+    
+    
+</body>
+</html>
